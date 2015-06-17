@@ -18,7 +18,7 @@ This project is meant to help build a higher-level sqlite interface library, wit
 
 ## Usage
 
-TBD
+See [REF-API-USAGE.md](REF-API-USAGE.md).
 
 ## Building
 
