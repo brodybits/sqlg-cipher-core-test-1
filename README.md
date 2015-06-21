@@ -1,8 +1,10 @@
-# SQLiteGlue-core
+# SQLiteGlue-core for sqlcipher
 
-Low-level Android &amp; other Java native glue interface to sqlite using Gluegen.
+Low-level Android &amp; other Java native glue interface to sqlcipher using Gluegen.
 
 Unlicense (public domain).
+
+Inculudes sqlcipher (BSD-style license) and part of TomCrypt (public domain)
 
 ## About
 

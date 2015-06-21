@@ -65,6 +65,13 @@ int sqlg_db_rekey_bytes(sqlg_handle_t db, unsigned char *key_bytes, int num_byte
 }
 **/
 
+int sqlg_db_key_string_native(sqlg_handle_t db, char *key_string)
+{
+  sqlite3 *mydb = HANDLE_TO_VP(db);
+
+  return sqlite3_key(mydb, key_string, strlen(key_string));
+}
+
 sqlg_long_t sqlg_db_last_insert_rowid(sqlg_handle_t db)
 {
   sqlite3 *mydb = HANDLE_TO_VP(db);

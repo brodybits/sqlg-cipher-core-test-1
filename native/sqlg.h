@@ -39,11 +39,12 @@ sqlg_handle_t sqlg_db_open(const char *filename, int flags);
 // FUTURE TBD (???):
 //sqlg_handle_t sqlg_db_open_vfs(const char *filename, int flags, const char *vfs);
 
-// FUTURE TBD for sqlcipher:
+// FUTURE TBD (???) for sqlcipher:
 //  int sqlg_db_key_bytes(sqlg_handle_t db, unsigned char *key_bytes, int num_bytes);
 //  int sqlg_db_rekey_bytes(sqlg_handle_t db, unsigned char *key_bytes, int num_bytes);
-// and/or:
-//  int sqlg_db_key_string_native(sqlg_handle_t db, char *key_string);
+
+int sqlg_db_key_string_native(sqlg_handle_t db, char *key_string);
+// FUTURE TBD for sqlcipher:
 //  int sqlg_db_rekey_string_native(sqlg_handle_t db, char *key_string);
 
 sqlg_handle_t sqlg_db_prepare_st(sqlg_handle_t db, const char *sql);

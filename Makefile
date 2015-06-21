@@ -4,6 +4,10 @@ all: ndkbuild
 init:
 	git submodule update --init
 
+#configure:
+#	cd sqlcipher
+	#...
+
 regen:
 	java -cp gluegentools/antlr.jar:gluegentools/gluegen.jar com.jogamp.gluegen.GlueGen -I. -Ecom.jogamp.gluegen.JavaEmitter -CSQLiteGlue.cfg native/sqlg.h
 	sed -i.orig 's/^import/\/\/import/' java/org/sqlg/SQLiteGlue.java
